@@ -1,0 +1,9 @@
+mod.loaded={0} cargado.
+ui.on=Activado
+ui.off=Desactivado
+ui.percent={0} %
+ui.text_field=campo de texto
+ui.empty=vacío
+ui.help=Flechas arriba y abajo para moverte entre controles. Izquierda y derecha cambian deslizadores y listas. Intro activa. Escape vuelve atrás como en el juego. Control Alt R repite el último anuncio. Inicio y Fin van al primer y al último elemento. Durante la partida, S lee la puntuación.
+ui.selected=seleccionado
+ui.unselected=sin seleccionar

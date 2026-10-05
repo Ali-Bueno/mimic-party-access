@@ -1,0 +1,10 @@
+# Core strings (game-agnostic). Placeholders use {0}, {1}...
+mod.loaded={0} loaded.
+ui.on=On
+ui.off=Off
+ui.percent={0} %
+ui.text_field=text field
+ui.empty=empty
+ui.help=Up and down arrows move between controls. Left and right change sliders and lists. Enter activates. Escape goes back as in the game. Control Alt R repeats the last announcement. Home and End go to the first and last item. During a match, S reads the scores.
+ui.selected=selected
+ui.unselected=not selected

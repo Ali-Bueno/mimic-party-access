@@ -1,0 +1,9 @@
+mod.loaded={0} carregado.
+ui.on=Ligado
+ui.off=Desligado
+ui.percent={0} %
+ui.text_field=campo de texto
+ui.empty=vazio
+ui.help=Setas para cima e para baixo movem entre os controles. Esquerda e direita alteram controles deslizantes e listas. Enter ativa. Esc volta como no jogo. Control Alt R repete o último anúncio. Home e End vão para o primeiro e o último item. Durante a partida, S lê a pontuação.
+ui.selected=selecionado
+ui.unselected=não selecionado
