@@ -1,6 +1,6 @@
 # STATUS — Mimic Party
 
-**Last updated:** 2026-10-05
+**Last updated:** 2026-10-05 (0.3.0, repo github.com/Ali-Bueno/mimic-party-access)
 
 ## Identity
 
@@ -46,7 +46,8 @@
 
 ## Next step
 
-Play a match: verify intro banner, wheel result/targeting, S key, pack votes; open Characters/Animations/Auras and download a pack.
+User testing of 0.3.0 (all patches apply; behaviour unverified): a match (intro, wheel target choice, guide tone,
+S key, playback/network events), pack creator keys (reorder, trim), season pass/shop/objectives readouts.
 
 ## Known issues / open questions
 
