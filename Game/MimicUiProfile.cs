@@ -13,7 +13,7 @@ namespace MimicPartyAccess.Game;
 /// Mimic Party conventions: base screens derive from <c>Mimick.UI.UIScreen</c>, overlay panels expose their
 /// heading as a <c>titleLabel</c> field, the settings panel captures raw keys while rebinding push-to-talk, and a
 /// few buttons act as switches whose state is only an icon or a tint (room visibility, team search, friends drawer,
-/// pack votes, and the equipped/locked marks of character, animation and aura cells).
+/// pack votes, invite picks, and the equipped/locked marks of character, animation and aura cells).
 /// </summary>
 public sealed class MimicUiProfile : DefaultUiProfile
 {
@@ -73,6 +73,11 @@ public sealed class MimicUiProfile : DefaultUiProfile
 
         if (CosmeticState(selectable) is string cosmetic)
             return cosmetic;
+
+        // Friends picked in the invite list ("free character") are shown only by the row's picked tint.
+        var inviteRow = selectable.GetComponentInParent<FriendRowUI>();
+        if (inviteRow != null && UiQueries.IsSameObject(inviteRow.button, selectable))
+            return Strings.Get(SameColor(inviteRow.background?.color, inviteRow.pickedTint) ? "ui.selected" : "ui.unselected");
 
         var voteRow = selectable.GetComponentInParent<ThemeVoteRow>();
         if (voteRow != null && UiQueries.IsSameObject(voteRow.likeButton, selectable))
